@@ -13,7 +13,7 @@ const lienzo = document.querySelector(".lienzo");
 
 function pintaCuadricula(numeroCasillas){
   lienzo.textContent = "";
-  let anchoCasilla = 600 / numeroCasillas;
+  let anchoCasilla = 500 / numeroCasillas;
   for (i=0; i<Math.pow(numeroCasillas, 2); i++){
     let div = document.createElement("div");
     
