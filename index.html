@@ -8,8 +8,22 @@
 </head>
 <body>
     <h1>Etch-a-Sketch</h1>
-    <button class="boton">Número de casillas</button>
-    <div class="container"></div>
+    <label>SELECCIONA: </label><button class="boton">Número de casillas</button>
+    <p>Haz click sobre el lienzo para pintar y otro click para detener el trazo</p>
+    <div class="panel">
+        <div class="botonera">
+            <p class="apagado">Apagado</p>
+            <button id="black" class="active" onclick="setEstilo('black')">Negro</button>
+            <button id="random" onclick="setEstilo('random')">Random</button>
+            <button id="eraser" onclick="setEstilo('white')">Borrador</button>
+            <button onclick="clean()">Limpiar lienzo</button>
+        </div>
+        <div class="lienzo"></div>
+       
+    </div>
+    
+
+   
     
     <script src="script.js"></script>
 </body>

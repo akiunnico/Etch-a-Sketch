@@ -9,30 +9,85 @@
     color: white;
     padding: 2em;
     text-align: center;
+    
   }
   h1{
     font-size: 3em;
   }
+  label{
+    font-size: 2em;
+    font-weight: bold;
+  }
   .boton{
-    margin: 2em;
+    margin: 2em 1em;
     padding: .5em;
     font-size: 1.5em;
     font-weight: bold;
     color: rgb(42, 92, 42);
     border-radius: 10px;
   }
-  .container{
-    width: 960px;
-    height: 960px;
-    background-color: white;
-    margin: 2em auto;
-    display: flex;
-    flex-wrap: wrap;
+  p{
+    color: yellow;
+    font-size: 2em;
+    font-weight: bold;
+    padding-bottom: 1em;
   }
-  .container div{
-    border: 1px solid rgb(187, 187, 187);
-    color: black;
+  .panel{
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 2em;
+  }
+
+  .botonera{
+    background-color: white;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+ 
+  }
+
+  .botonera button{
+    margin-bottom: 2em;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    background-color: gray;
+    border-radius: 10px;
+    border: none;
+  }
+  .lienzo{
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+   
+  }
+  .lienzo div{
+    /* border: 1px solid rgb(187, 187, 187); */
+    display: flex;
+  }
+  .botonera p{
+   
+    width: 300px;
+    padding: .5em;
+    border-radius: 10px;
+    font-size: 1.6em;
+    color: white;
+    margin-bottom: 2em;
+   
+  }
+  .apagado{
+    background-color: rgb(165, 15, 15);
+  }
+  .encendido{
+    background-color: rgb(42, 92, 42);
+
+  }
+  .botonera .active{
+    background-color: black;
   }
